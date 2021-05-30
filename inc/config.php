@@ -6,4 +6,12 @@
   }
 
   // Our config is below
+
+
+  // Include the DB.php file:
+  // More secure if separate the config somewhere outside of the app
+  // ../../classes/db.php
+  include_once "classes/db.php";
+
+  $con = DB::getConnection();
 ?>
