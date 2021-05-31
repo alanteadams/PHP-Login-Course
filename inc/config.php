@@ -19,8 +19,10 @@
   // Include the DB.php file:
   // More secure if separate the config somewhere outside of the app
   // ../../classes/db.php
-  include_once "classes/db.php";
+  include_once "classes/DB.php";
   include_once "classes/Filter.php";
+  include_once "classes/Page.php";
+  include_once "classes/User.php";
   include_once "functions.php";
 
   $con = DB::getConnection();
