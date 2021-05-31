@@ -5,6 +5,11 @@
     // We can redirect someone in here instead of exiting or give them a 404 page
   }
 
+  // Session are always turned on
+  if(!isset($_SESSION)) {
+    session_start();
+  }
+
   // Our config is below
   // Allow errors
   error_reporting(-1);

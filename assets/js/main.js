@@ -88,7 +88,7 @@ $(document)
         if (data.redirect !== undefined) {
           window.location = data.redirect;
         } else if (data.error !== undefined) {
-          _error.text(data.error).show();
+          _error.html(data.error).show();
         }
       })
       .fail(function ajaxFailed(e) {
